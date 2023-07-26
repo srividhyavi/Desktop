@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg navbar-info bg-info">
+    <div class="container-fluid">
+      <a class="navbar-brand" routerLink="/">TCfood</a>
+     <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="/login">Login</a>
+          </li>
+           
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dashboard
+                </a>
+                <div class="dropdown-menu">
+                    <li><a class="dropdown-item" routerLink="/profile">Profile</a></li>
+                    <li><a class="dropdown-item" routerLink="/order">Order</a></li>
+                    <li><a class="dropdown-item" routerLink="/login">Logout</a></li>
+                </div>
+              </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/cart-page"><i class="bi bi-cart4"></i><span *ngIf="cartQuantity">{{cartQuantity}}</span></a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
